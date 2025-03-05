@@ -12,7 +12,6 @@ if __name__ == '__main__':
     parser.add_argument('msg_1', type=str)
     parser.add_argument('msg_2', type=str)
     args = parser.parse_args()
-    print(args)
     cow1 = cowsay(message=args.msg_1,
                   cow=args.f,
                   eyes=args.e).split("\n")
@@ -20,7 +19,6 @@ if __name__ == '__main__':
                   cow=args.F,
                   eyes=args.E).split("\n")
     strlen1, strlen2 = len(cow1), len(cow2)
-    print(strlen1, strlen2)
     if strlen1 > strlen2:
         print('\n'.join(i for i in cow1[:strlen1 - strlen2]))
         cow1 = cow1[strlen1 - strlen2:]
