@@ -22,7 +22,7 @@ def ask(promt: str, valid: list[str] = None) -> str:
 
 
 def inform(format_string: str, bulls: int, cows: int) -> None:
-    print(cowsay(message=format_string.format(bulls, cows)))
+    print(format_string.format(bulls, cows))
 
 
 def file_read(filepath: str, length: int = 5) -> list[str]:
