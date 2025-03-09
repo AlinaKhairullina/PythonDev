@@ -41,7 +41,7 @@ def gameplay(ask: callable, inform: callable, words: list[str]) -> int:
     reference = words[random.randint(0, len(words) - 1)]
     while (candidate != reference):
         attempts += 1
-        candidate = ask("Введите слово:")
+        candidate = ask("Введите слово: ")
         if len(candidate) == 0:
             print("Вы не ввели слово")
             continue
